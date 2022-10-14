@@ -1,0 +1,104 @@
+@import 'utilities';
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: $cream-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  height: 600px;
+  background-color: $white-color;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .image {
+    background: url('/images/image-product-desktop.jpg') no-repeat center
+      center/cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    h3 {
+      color: $gblue-color;
+      font-size: 1rem;
+      letter-spacing: 4px;
+      font-weight: 500;
+      padding-bottom: 25px;
+    }
+
+    h1 {
+      color: $dblue-color;
+      font-family: 'Fraunces', serif;
+      text-align: left;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      padding-right: 50px;
+      padding-bottom: 40px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: $gblue-color;
+      line-height: 1.5rem;
+      letter-spacing: 1.2px;
+      text-align: left;
+      padding-right: 35px;
+      padding-bottom: 40px;
+    }
+
+    #price {
+      display: flex;
+      align-items: center;
+      padding-bottom: 40px;
+
+      .new {
+        font-family: 'Fraunces', serif;
+        color: $primary-color;
+        font-size: 2.5rem;
+      }
+
+      .old {
+        color: $gblue-color;
+        text-decoration: line-through;
+        padding-left: 20px;
+      }
+    }
+
+    a {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 20px 0;
+
+      // &:hover {
+      //   background-color: $primary-hover;
+      // }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

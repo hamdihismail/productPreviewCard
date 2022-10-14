@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0"
+  },
+  "name": "product-preview-card-component-main",
+  "description": "![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

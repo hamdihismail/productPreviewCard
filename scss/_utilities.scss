@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+// Resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Colors
+$primary-color: hsl(158, 36%, 37%);
+$primary-hover: hsl(158, 36%, 20%);
+$cream-color: hsl(30, 38%, 92%);
+$dblue-color: hsl(212, 21%, 14%);
+$gblue-color: hsl(228, 12%, 48%);
+$white-color: hsl(0, 0%, 100%);
+
+// Button
+.btn {
+  background-color: $primary-color;
+  color: $white-color;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  align-self: center;
+  cursor: pointer;
+
+  &:active {
+    background: $primary-hover;
+  }
+}
+
+// a:active {
+//   background-color: $primary-hover;
+// }
+
+// Break points
+@media (max-width: 500px) {
+  body .card {
+    width: 375px;
+    height: 775px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+
+    .content {
+      padding: 30px 25px;
+
+      h3,
+      h1,
+      p {
+        padding-bottom: 25px;
+      }
+      h1 {
+        padding-right: 0;
+        font-size: 2.3rem;
+      }
+      p {
+        padding-right: 0;
+      }
+
+      #price {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
